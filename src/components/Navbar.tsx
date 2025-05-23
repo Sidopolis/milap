@@ -34,6 +34,12 @@ const Navbar: React.FC<{ pendingRequests?: number }> = ({ pendingRequests = 0 })
           <span className="absolute -top-2 -right-2 bg-green-400 text-black rounded-full px-2 py-0.5 text-xs font-bold border border-white shadow">{pendingRequests}</span>
         )}
       </NavLink>
+      <div className="flex items-center gap-6">
+        <a href="https://www.producthunt.com/posts/milap?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-milap" target="_blank" rel="noopener noreferrer" className="hover:opacity-90 transition-opacity">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=969244&theme=light&t=1748005135550" alt="Milap - Find your tribe: Connect with builders | Product Hunt" style={{ width: '250px', height: '54px' }} width="250" height="54" />
+        </a>
+        <span className="text-xs bg-green-400 text-black px-2 py-1 rounded font-medium">Beta</span>
+      </div>
     </nav>
   );
 };
